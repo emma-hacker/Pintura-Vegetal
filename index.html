@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintura Natural - Pinta hoy, cuida el mañana</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tipografía -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <a href="#" class="logo" style="text-decoration: none; color: inherit;">
+            <img src="img/logo.png" alt="Logo Pintura Natural" class="logo-img">
+            Pintura<span>Vegetal</span>
+        </a>
+        <nav>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#costos">Costos</a>
+            <a href="#contacto" class="btn-nav">Comprar</a>
+        </nav>
+        <button id="btn-menu" class="btn-menu-movil" aria-label="Abrir menú">
+            ☰
+        </button>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero">
+        <div class="hero-text">
+            <span class="etiqueta">Nuevo Lanzamiento Ecológico</span>
+            <h1>El futuro en tus manos con <span>Pintura Natural</span></h1>
+            <p>Pintura elaborada con pigmentos naturales de origen vegetal, ideal para superficies interiores y exteriores. Ofrece un acabado de alta calidad, gran adherencia y un bajo impacto ambiental.</p>
+            <p class="eslogan">"Pinta hoy, cuida el mañana"</p>
+            <div class="botones">
+                <a href="#contacto" class="btn-primario">Comprar Ahora</a>
+                <a href="#proceso" class="btn-secundario">Ver Proceso</a>
+            </div>
+            <div class="stats">
+                <div><strong>100%</strong><span>Ecológica</span></div>
+                <div><strong>2h</strong><span>Secado al tacto</span></div>
+                <div><strong>40-50%</strong><span>Margen de Ganancia</span></div>
+            </div>
+        </div>
+
+        <div class="hero-imagen">
+            <div class="circulo-decorativo"></div>
+            <!-- Imagen del producto terminado (botes) -->
+            <img src="img/producto.png" alt="Botes de Pintura Natural">
+        </div>
+    </section>
+
+    <!-- Sección: Beneficios / Características -->
+    <section id="beneficios" class="seccion">
+        <h2 class="titulo-seccion">Nuestros <span>Beneficios</span></h2>
+        <div class="grid-beneficios">
+            <div class="card">
+                <h3>🌱 De origen vegetal</h3>
+                <p>Elaborada con mucílago de nopal, cal y pigmentos naturales. Amigable con el medio ambiente.</p>
+            </div>
+            <div class="card">
+                <h3>💧 Transpirable</h3>
+                <p>Permite la transpiración de los muros sin retener humedad, ideal para todo tipo de superficies (madera, concreto, ladrillo).</p>
+            </div>
+            <div class="card">
+                <h3>🛡️ Alta adherencia</h3>
+                <p>No requiere de selladores químicos y ofrece una durabilidad media en exteriores y alta en interiores.</p>
+            </div>
+            <div class="card">
+                <h3>♻️ Biodegradable</h3>
+                <p>Al descomponerse se convierte en polvo, reduciendo la contaminación. Utiliza merma agrícola de bajo valor comercial.</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Sección: Galería de Colores -->
+    <section class="seccion">
+        <h2 class="titulo-seccion">Nuestros <span>Colores</span></h2>
+        <p class="texto-centro" style="margin-bottom: 2rem;">Pigmentos 100% naturales. Los tonos pueden variar ligeramente según el lote de cosecha.</p>
+        <div class="grid-colores">
+            <div class="color-card"><div class="circulo-color" style="background: #4ade80;"></div><p>Verde natural</p></div>
+            <div class="color-card"><div class="circulo-color" style="background: #fde047;"></div><p>Amarillo</p></div>
+            <div class="color-card"><div class="circulo-color" style="background: #d97706;"></div><p>Terracota</p></div>
+            <div class="color-card"><div class="circulo-color" style="background: #e5e5e5;"></div><p>Beige</p></div>
+            <div class="color-card"><div class="circulo-color" style="background: #3b82f6;"></div><p>Azul</p></div>
+        </div>
+    </section>
+
+    <!-- Sección: Proceso de Elaboración -->
+    <section id="proceso" class="seccion bg-diferente">
+        <h2 class="titulo-seccion">Proceso de <span>Elaboración</span></h2>
+        <div class="proceso-pasos">
+            <div class="paso">
+                <img src="img/proceso-1.jpeg" alt="Picar nopales">
+                <p><strong>1.</strong> Picar 3 o 4 nopales gruesos y dejarlos reposar en 2 litros de agua por una noche para que suelten la baba.</p>
+            </div>
+            <div class="paso">
+                <img src="img/proceso-2.jpeg" alt="Nopal reposando">
+                <p><strong>2.</strong> Al día siguiente, triturar y colar para separar el bagazo de la baba (mucílago).</p>
+            </div>
+            <div class="paso">
+                <img src="img/proceso-4.jpeg" alt="Ingredientes cal y sal">
+                <p><strong>3.</strong> En un bote de 19 litros, mezclar agua, cal y sal. Añadir la baba de nopal (2L de agua por ½L de baba).</p>
+            </div>
+            <div class="paso">
+                <img src="img/proceso-5.jpeg" alt="Mezcla final">
+                <p><strong>4.</strong> Revolver bien y dejar reposar una noche. Finalmente, añadir el colorante natural de tu gusto.</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Sección: Instrucciones de Uso -->
+    <section class="seccion">
+        <h2 class="titulo-seccion">Instrucciones de <span>Uso</span></h2>
+        <div class="acordeon-contenedor">
+            <details class="acordeon">
+                <summary>🎨 Preparación de la superficie</summary>
+                <p>La superficie debe estar limpia, seca, libre de polvo, grasa, aceite o residuos. Mezcle bien antes de usar.</p>
+            </details>
+            <details class="acordeon">
+                <summary>🖌️ Modo de aplicación</summary>
+                <p>Puede aplicarse con brocha, rodillo o pistola de aire. Se recomienda aplicar 2 a 3 capas para un mejor acabado. Entre cada capa, espere de 2 a 4 horas (según condiciones del clima).</p>
+            </details>
+            <details class="acordeon">
+                <summary>⏱️ Rendimiento y Secado</summary>
+                <p><strong>Rendimiento:</strong> Rinde hasta 10 m² por litro (dependiendo de la superficie).<br><strong>Secado:</strong> Al tacto en 1 a 2 horas. Total: 24 horas.</p>
+            </details>
+            <details class="acordeon">
+                <summary>⚠️ Precauciones y Almacenamiento</summary>
+                <p>Mantener fuera del alcance de los niños. No ingerir. Evitar el contacto con los ojos, piel y ropa. Consérvese en un lugar fresco, seco y fuera de la luz solar directa. Una vez abierto el envase, consérvese bien cerrado y utilícese de inmediato.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Sección: Costos y Rentabilidad -->
+    <section id="costos" class="seccion">
+        <h2 class="titulo-seccion">Costos y <span>Rentabilidad</span></h2>
+        <div class="grid-costos">
+            <div class="card-costo">
+                <h3>Costo Directo de Producción</h3>
+                <p class="precio">$10.00 - $25.00 <span>MXN / litro</span></p>
+                <p>Materia prima: Cal viva/hidratada, sal gruesa, fijador natural (mucílago de nopal) y pigmentos orgánicos/minerales.</p>
+            </div>
+            <div class="card-costo">
+                <h3>Precio de Comercialización</h3>
+                <p class="precio">$35.00 - $70.00 <span>MXN / litro</span></p>
+                <p>Presentación artesanal / ecológica básica. Aprovechamiento de merma agrícola para reducir costos.</p>
+            </div>
+            <div class="card-costo">
+                <h3>Margen Bruto de Ganancia</h3>
+                <p class="precio">40% - 50% <span>sobre ventas</span></p>
+                <p>Rentabilidad ideal para modelos de producción a escala y distribución local en Guanajuato.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Nosotros / Equipo -->
+    <section id="nosotros" class="seccion bg-diferente">
+        <h2 class="titulo-seccion">Sobre <span>Nosotros</span></h2>
+        <p class="texto-centro">Somos 2 jóvenes guanajuatenses iniciando en el mundo del emprendimiento, con la intención de desarrollar ideas innovadoras que contribuyan al cuidado del medio ambiente.</p>
+        
+        <div class="equipo">
+            <div class="miembro">
+                <img src="img/equipo-1.jpg" alt="Casillas Reyes Andrés Octavio">
+                <h4>Casillas Reyes Andrés Octavio</h4>
+                <p>Estudiante de Economía, enfocado en la viabilidad financiera y el impacto de mercado del producto.</p>
+            </div>
+            <div class="miembro">
+                <img src="img/equipo-2.jpg" alt="Guevara López Carlos Gael">
+                <h4>Guevara López Carlos Gael</h4>
+                <p>Enfocado en la elaboración técnica, la investigación de materiales y el desarrollo sustentable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección: Contacto / Comprar -->
+    <section id="contacto" class="seccion">
+        <h2 class="titulo-seccion">¡Adquiere tu <span>Pintura Natural</span>!</h2>
+        <div class="contacto-contenedor">
+            <p>Contáctanos para hacer tu pedido o solicitar más información. Contamos con presentaciones de 20L (Rinde aprox. 200m²).</p>
+            
+            <!-- Formulario (Puedes usar Formspree o tu propio backend) -->
+            <form action="https://formspree.io/f/xvkagabd" method="POST" class="formulario">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="mensaje" rows="4" placeholder="¿Cuántos litros necesitas o qué color te interesa?" required></textarea>
+                <button type="submit" class="btn-primario">Enviar Pedido</button>
+            </form>
+            <p class="contacto-info">📍 Purísima del Rincón, Guanajuato, México.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Pinthura Vegetal. Proyecto 2do Parcial - Economía. Instituto Tecnológico Superior de Purísima del Rincón.</p>
+    </footer>
+
+    <!-- Botón Regresar Arriba -->
+    <button id="btn-top" class="btn-top" aria-label="Regresar al inicio" title="Regresar al inicio">
+        ↑
+    </button>
+
+    <!-- Botón de WhatsApp Flotante -->
+    <a href="https://wa.me/524761299877?text=Hola,%20me%20interesa%20la%20pintura%20natural" target="_blank" class="btn-whatsapp" aria-label="Contactar por WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="35" height="35">
+    </a>
+
+    <!-- Burbuja de Accesibilidad -->
+    <div class="accesibilidad-contenedor">
+        <button id="btn-accesibilidad" class="btn-accesibilidad" aria-label="Abrir menú de accesibilidad" title="Opciones de Accesibilidad">
+            ♿
+        </button>
+        
+        <div id="menu-accesibilidad" class="menu-accesibilidad">
+            <h4>Accesibilidad</h4>
+            <button onclick="leerPagina()">🔊 Leer en voz alta</button>
+            <button onclick="detenerLectura()">🛑 Detener lectura</button>
+            <button onclick="toggleContraste()">🌓 Alto contraste</button>
+            <button onclick="cambiarTamano(1)">➕ Aumentar texto</button>
+            <button onclick="cambiarTamano(-1)">➖ Disminuir texto</button>
+        </div>
+    </div>
+
+    <script>
+        // 1. Abrir y cerrar el menú
+        const btnAccesibilidad = document.getElementById('btn-accesibilidad');
+        const menuAccesibilidad = document.getElementById('menu-accesibilidad');
+
+        btnAccesibilidad.addEventListener('click', () => {
+            menuAccesibilidad.classList.toggle('activo');
+        });
+
+        // 2. Función para Leer la página en voz alta
+        function leerPagina() {
+            // Cancelar cualquier lectura previa
+            window.speechSynthesis.cancel();
+            
+            // Obtener el texto principal de la página (evitando el menú)
+            const textoHero = document.querySelector('.hero-text').innerText;
+            const textoTitulo = document.querySelector('.titulo-seccion').innerText;
+            
+            // Unir el texto y crear el objeto de voz
+            const textoALeer = `Bienvenido a Pinthura Vegetal. ${textoHero}`;
+            const mensaje = new SpeechSynthesisUtterance(textoALeer);
+            
+            mensaje.lang = 'es-MX'; // Español de México
+            mensaje.rate = 1; // Velocidad normal
+            
+            window.speechSynthesis.speak(mensaje);
+        }
+
+        // 3. Detener lectura
+        function detenerLectura() {
+            window.speechSynthesis.cancel();
+        }
+
+        // 4. Alternar Alto Contraste
+        function toggleContraste() {
+            document.body.classList.toggle('alto-contraste');
+        }
+
+        // 5. Cambiar tamaño de letra
+        let tamanoActual = 100; // Porcentaje
+        function cambiarTamano(delta) {
+            tamanoActual += (delta * 10);
+            
+            // Limitar entre 80% y 150%
+            if (tamanoActual < 80) tamanoActual = 80;
+            if (tamanoActual > 150) tamanoActual = 150;
+            
+            document.documentElement.style.fontSize = tamanoActual + '%';
+        }
+
+        // Lógica del menú hamburguesa
+        const btnMenu = document.getElementById('btn-menu');
+        const navMenu = document.querySelector('.navbar nav');
+
+        btnMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('activo');
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        navMenu.querySelectorAll('a').forEach(enlace => {
+            enlace.addEventListener('click', () => {
+                navMenu.classList.remove('activo');
+            });
+        });
+
+        // Animaciones al hacer scroll
+        const reveals = document.querySelectorAll('.card, .paso, .card-costo, .miembro, .color-card');
+
+        reveals.forEach(el => el.classList.add('reveal'));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Solo animar una vez
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(el => observer.observe(el));
+
+        // Botón Regresar Arriba
+        const btnTop = document.getElementById('btn-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                btnTop.classList.add('visible');
+            } else {
+                btnTop.classList.remove('visible');
+            }
+        });
+
+        btnTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
