@@ -184,12 +184,18 @@
             <p>Contáctanos para hacer tu pedido o solicitar más información. Contamos con presentaciones de 20L (Rinde aprox. 200m²).</p>
             
             <!-- Formulario (Puedes usar Formspree o tu propio backend) -->
-            <form action="https://formspree.io/f/xvkagabd" method="POST" class="formulario">
+            <form action="https://formspree.io/f/xvkagabd" method="POST" class="formulario" id="mi-formulario">
                 <input type="text" name="nombre" placeholder="Tu Nombre" required>
                 <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
                 <textarea name="mensaje" rows="4" placeholder="¿Cuántos litros necesitas o qué color te interesa?" required></textarea>
                 <button type="submit" class="btn-primario">Enviar Pedido</button>
             </form>
+
+            <!-- mensaje de exito-->
+            <div id="mensaje-exito" style="display: none; color: #4ade80; font-weight: bold; text-align: center; margin-top: 1rem;">
+                <p>¡Gracias por tu pedido! Nos pondremos en contacto contigo pronto.</p>
+            </div>
+
             <p class="contacto-info">📍 Purísima del Rincón, Guanajuato, México.</p>
         </div>
     </section>
@@ -323,6 +329,24 @@
                 behavior: 'smooth'
             });
         });
+
+                // --- Lógica para reiniciar el formulario al enviarlo ---
+        const formulario = document.getElementById('mi-formulario');
+        const mensajeExito = document.getElementById('mensaje-exito');
+
+        formulario.addEventListener('submit', function(e) {
+            // Esperamos medio segundo (para que Formspree procese el envío) y luego limpiamos
+            setTimeout(() => {
+                formulario.reset(); // Borra los campos
+                mensajeExito.style.display = 'block'; // Muestra el mensaje verde
+                
+                // Opcional: Ocultar el mensaje después de 5 segundos
+                setTimeout(() => {
+                    mensajeExito.style.display = 'none';
+                }, 5000);
+            }, 500);
+        });
+
     </script>
     
 
